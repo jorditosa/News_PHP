@@ -24,7 +24,7 @@
           <a class="nav-link" href="#">Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Perfil</a>
+          <a class="nav-link" href="#">Logout</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active">Cat</a>

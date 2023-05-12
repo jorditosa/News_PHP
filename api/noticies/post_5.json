@@ -1,0 +1,12 @@
+{
+    "title": {
+       "ca": "Títol del post en català",
+       "en": "Title of the post in English"
+    },
+    "description": {
+       "ca": "Contingut del post en català",
+       "en": "Content of the post in English"
+    },
+    "date": "1681412434",
+    "image": "https://picsum.photos/800/600"
+ }
