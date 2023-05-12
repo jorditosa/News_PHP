@@ -1,14 +1,18 @@
 <?php
-    include './includes/templates/head.php';
+require './includes/functions.php';
+
+includeTemplate('head');
 ?>
 
 <body>
 
 <?php
-    include './includes/templates/header.php';
+includeTemplate('header');
 ?>
 
 
-  
+<?php
+includeTemplate('footer');
+?>
 </body>
 </html>
