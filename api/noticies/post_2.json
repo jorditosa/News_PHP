@@ -7,6 +7,10 @@
        "ca": "Contingut del post en català",
        "en": "Content of the post in English"
     },
-    "date": "1681412434",
-    "image": "https://picsum.photos/800/600"
- }
+    "read_more": {
+      "ca": "<a class=\"d-block\" href=\"#\" >Llegir més</a>",
+      "en": "Read more"
+   },
+      "date": "1681412434",
+      "image": "./src/img/news_2.jpg"
+}

@@ -1,12 +1,16 @@
 {
     "title": {
-       "ca": "Títol del post en català",
-       "en": "Title of the post in English"
+       "ca": "<h3>Hi ha una manera de salvar totes les plantes del món de l’extinció</h3>",
+       "en": ""
     },
     "description": {
-       "ca": "Contingut del post en català",
+       "ca": "<p>L'ecologista Richard T. Corlett creu que hi ha una manera de salvar totes les plantes del món de l'extinció i ha traçat un pla per protegir-les. En un article publicat a ‘Trends in Plant Science’, explica quina és la seva idea, que creu que pot funcionar per impedir que s'extingeixi fins i tot una sola espècie més i que, si això és possible, “no hi ha excusa” per no fer-ho.</p><strong>Una amenaça sovint ignorada.</strong><br/><p>Com passa amb els animals, moltes espècies de plantes estan patint per adaptar-se a un món dominat i modificat pels humans. I no obstant això, sovint els esforços de conservació les ignoren, encara que sigui més barates i fàcils de protegir que els animals i que tenen paper importantíssim tant en els ecosistemes com per a nosaltres, proveïnt-nos, sense anar més lluny d'aliments i medicaments.</p><p>A dia d’avui es creu que entre un 21% i un 48% de totes les espècies de plantes vasculars, que inclouen les plantes amb flor i els arbres, podrien extingir-se a causa dels canvis en els usos del sòl i altres pràctiques insostenibles. Corlett creu que es podria evitar l’extinció de totes les 382.000 espècies de plantes que es coneixen però que cal tenir en compte que no hi ha una solució única per a totes.</p><strong>Plans molt diferents</strong><br/><p>Així doncs, els plans de conservació poden ser molt diferents, tant als seus hàbitats naturals com en entorns controlats com ara jardins botànics o, fins i tot, una combinació de les dues. Aquí és on entrarien les ‘microreserves’, petites zones protegides, i també la conservació de llavors per replantar en cas que es produeixi el pitjor. No obstant això, el científic reconeix que el millor és conservar les poblacions salvatges i autosuficients en zones protegides, permetent que evolucionin en resposta els canvis ambientals i amb l’ajuda de la resta de peces dels ecosistemes de què formen part i que, sense elles, també podrien extingir-se.</p>", 
        "en": "Content of the post in English"
     },
+    "read_more": {
+         "ca": "<a class=\"d-block\" href=\"#\" >Llegir més</a>",
+         "en": "Read more"
+    },
     "date": "1681412434",
-    "image": "https://picsum.photos/800/600"
+    "image": "./src/img/news_1.jpg"
  }

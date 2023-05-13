@@ -1,4 +1,7 @@
 <?php
+require './includes/functions.php';
+includeTemplate('head');
+includeTemplate('header');
 
 $jsonData = file_get_contents('./api/noticies/post_1.json');
 $data = json_decode($jsonData);

@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/bloc.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Act 1</a>
+          <a class="nav-link" href="/activitat_1.php">Act 1</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">API</a>
@@ -26,12 +26,15 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Logout</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active">Cat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Eng</a>
-        </li>
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          CAT
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item active" href="#">CAT</a></li>
+          <li><a class="dropdown-item" href="#">ENG</a></li>
+        </ul>
+      </div>
       </ul>
     </div>
   </div>
