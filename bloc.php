@@ -9,23 +9,29 @@ includeTemplate('head');
 
 <?php
 includeTemplate('header');
+
+session_start();
+
+// Obtener el valor de la variable de sesión
+$idioma = $_SESSION['idioma'];
+
 ?>
 
 <main class="container">
-    <h1 class="py-4">Noticies d'actualitat mediambiental</h1>
-
-    <form action="bloc.php" method="post" class="bg-dark text-light rounded-top p-4 d-flex align-items-center">
-      <div class="filter-date col d-flex gap-4">
-        <div class="input">
-          <label for="dateNew">Més recents</label>
-          <input type="radio" name="order-by" id="dateNew" value="dateNew">
-        </div>
-        <div class="input">
+  <h1 class="py-4">Noticies d'actualitat mediambiental</h1>
+  
+  <form action="bloc.php" method="post" class="rpw bg-dark text-light rounded-top p-4 d-flex align-items-center">
+    <div class="filter-date col d-flex gap-4">
+      <div class="input">
+        <label for="dateNew">Més recents</label>
+        <input type="radio" name="order-by" id="dateNew" value="dateNew">
+      </div>
+      <div class="input">
           <label for="dateOld">Més antigues</label>
           <input type="radio" name="order-by" id="dateOld" value="dateOld">
         </div>
       </div>
-
+      
       <div class="filter-title col d-flex gap-4">
         <div class="input">
           <label for="titleAZ">A - Z</label>
@@ -36,35 +42,33 @@ includeTemplate('header');
           <input type="radio" name="order-by" id="titleZA" value="titleZA">
         </div>
       </div>
-
+      
       <hr>
-
+      
       <button type="submit" class="btn btn-light">Ordenar</button>
     </form>
-
+    
     <div class="row mb-2">
-    <?php
+      <?php
       // Obtener el valor seleccionado del formulario
       $orderBy = $_POST['order-by'];
-
+      
       // Importar datos Json
       $news=[];
       for($i = 0; $i < 6; $i++) {
         $jsonData = file_get_contents('./api/noticies/post_'.$i.'.json');
         $data = json_decode($jsonData);
         $news[$i] = $data;
-      }
-
-    
+      }    
 
       // Ordenar según la opción seleccionada
       if ($orderBy === 'dateNew') {
         usort($news, function($a, $b) {
-          return $b->date - $a->date; // Orden descendente, de más nuevas a más antiguas
+          return $b->date - $a->date; // Orden de más nuevas a más antiguas
         });
       } elseif ($orderBy === 'dateOld') {
         usort($news, function($a, $b) {
-          return $a->date - $b->date; // Orden ascendente, de más antiguas a más nuevas
+          return $a->date - $b->date; // Orden de más antiguas a más nuevas
         });
       } elseif ($orderBy === 'titleAZ') {
           usort($news, function($a, $b) {
@@ -75,20 +79,14 @@ includeTemplate('header');
               return strcmp($b->title->ca, $a->title->ca); // Orden descendente, de Z a A
           });
       }
-
-      // Bucle para mostrar las noticias
-      for ($i = 0; $i <= 5; $i++) {
-        // Resto del código para mostrar las noticias
-      }
- 
-      ?>
+    ?>
 
     <?php for ($i = 1; $i < 6; $i++) : ?>
       <?php $data = $news[$i]; ?>
       <div class="col-12">
         <div class="row g-0 border rounded-bottom overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <?php echo $data->title->ca; ?>
+            <?php echo $data->title->$idioma; ?>
             <div class="mb-1 text-body-secondary">
               <?php
               $dt = $data->date;
@@ -99,7 +97,7 @@ includeTemplate('header');
             <div class="row">
               <div class="card-text mb-auto col-9">
                 <?php
-                $description = $data->description->ca;
+                $description = $data->description->$idioma;
 
                 // Si la longitud del contenido es mayor a 120 palabras, corta el contenido y añade puntos suspensivos
                 if (str_word_count($description) > 120) {
@@ -109,7 +107,7 @@ includeTemplate('header');
                 }
 
                 echo $description;
-                echo $data->read_more->ca;
+                echo $data->read_more->$idioma;
                 ?>
               </div>
               <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
