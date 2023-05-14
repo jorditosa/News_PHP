@@ -25,7 +25,6 @@ includeTemplate('header');
       ?>
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
             <?php
             echo $data->title->ca;
             ?>
@@ -37,7 +36,7 @@ includeTemplate('header');
             ?>
           </div>
           <div class="row">
-            <div class="card-text mb-auto col-8">
+            <div class="card-text mb-auto col-9">
             <?php
             $description = $data->description->ca;
 
@@ -52,7 +51,7 @@ includeTemplate('header');
             echo $data->read_more->ca;
             ?>
             </div>
-            <img class="news-img pt-2 col-4" src="<?php echo $data->image; ?>" alt="imatge noticia">
+            <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
           </div>
         </div>
       </div>
@@ -67,7 +66,6 @@ includeTemplate('header');
       ?>
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
             <?php
             echo $data->title->ca;
             ?>
@@ -79,7 +77,7 @@ includeTemplate('header');
             ?>
           </div>
           <div class="row">
-            <div class="card-text mb-auto col-8">
+            <div class="card-text mb-auto col-9">
             <?php
             $description = $data->description->ca;
 
@@ -94,7 +92,7 @@ includeTemplate('header');
             echo $data->read_more->ca;
             ?>
             </div>
-            <img class="news-img pt-2 col-4" src="<?php echo $data->image; ?>" alt="imatge noticia">
+            <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
           </div>
         </div>
       </div>
@@ -109,7 +107,6 @@ includeTemplate('header');
       ?>
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
             <?php
             echo $data->title->ca;
             ?>
@@ -121,7 +118,7 @@ includeTemplate('header');
             ?>
           </div>
           <div class="row">
-            <div class="card-text mb-auto col-8">
+            <div class="card-text mb-auto col-9">
             <?php
             $description = $data->description->ca;
 
@@ -136,7 +133,7 @@ includeTemplate('header');
             echo $data->read_more->ca;
             ?>
             </div>
-            <img class="news-img pt-2 col-4" src="<?php echo $data->image; ?>" alt="imatge noticia">
+            <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
           </div>
         </div>
       </div>
@@ -151,7 +148,6 @@ includeTemplate('header');
       ?>
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
             <?php
             echo $data->title->ca;
             ?>
@@ -163,7 +159,7 @@ includeTemplate('header');
             ?>
           </div>
           <div class="row">
-            <div class="card-text mb-auto col-8">
+            <div class="card-text mb-auto col-9">
             <?php
             $description = $data->description->ca;
 
@@ -178,7 +174,7 @@ includeTemplate('header');
             echo $data->read_more->ca;
             ?>
             </div>
-            <img class="news-img pt-2 col-4" src="<?php echo $data->image; ?>" alt="imatge noticia">
+            <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
           </div>
         </div>
       </div>
@@ -193,7 +189,6 @@ includeTemplate('header');
       ?>
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
             <?php
             echo $data->title->ca;
             ?>
@@ -205,7 +200,7 @@ includeTemplate('header');
             ?>
           </div>
           <div class="row">
-            <div class="card-text mb-auto col-8">
+            <div class="card-text mb-auto col-9">
             <?php
             $description = $data->description->ca;
 
@@ -220,7 +215,7 @@ includeTemplate('header');
             echo $data->read_more->ca;
             ?>
             </div>
-            <img class="news-img pt-2 col-4" src="<?php echo $data->image; ?>" alt="imatge noticia">
+            <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
           </div>
         </div>
       </div>

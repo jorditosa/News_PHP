@@ -1,16 +1,16 @@
 {
     "title": {
-       "ca": "Títol del post en català",
+       "ca": "<h3>El Mediterrani es mor: apressen a legislar contra la seva contaminació</h3>",
        "en": "Title of the post in English"
     },
     "description": {
-       "ca": "Contingut del post en català",
+       "ca": "<p>Científics de la Universitat Autònoma de Barcelona eleven al Parlament Europeu un informe sobre les seves creixents amenaces</p><p>No només és l’escalfament global el que està amenaçant el Mediterrani i tot el que hi habita, inclòs l’ésser humà. Un altre cúmul d’impactes, fonamentalment derivats de la contaminació causada per l’home, continua deteriorant inexorablement el Mare Nostrum. Per això, resulta extremadament urgent la materialització de polítiques efectives en l’àmbit local i regional, així com la cooperació de tots els països de la conca, per revertir amb èxit els problemes ambientals en aquesta àrea marina.</p><p>Així ho demostra un informe fet per l’Institut de Ciència i Tecnologia Ambientals de la Universitat Autònoma de Barcelona (ICTA-UAB) presentat al Parlament Europeu per l’oceanògrafa Patrizia Ziveri. El document remarca la necessitat de lluitar urgentment contra la creixent contaminació provocada per deixalles marines i plàstics al Mediterrani, així com de millorar la legislació vigent i fer un seguiment dels nous tipus de contaminants, que requereixen una regulació immediata.</p><p>El Mediterrani és una de les àrees marines del món que suporta més pressió humana. Les seves altes taxes de població i urbanització (150 milions d’habitants a les seves costes), l’activitat industrial, el turisme (acumula un terç del volum mundial) i la pesca han provocat un augment ràpid de la contaminació. Això, unit a una configuració geomorfològica en forma de conca semitancada i a la seva circulació oceànica específica, ha convertit aquest mar en un dels llocs més contaminats del planeta i en una trampa natural per a les deixalles marines, principalment plàstics, assenyala l’informe.</p><h4>El turisme, el principal generador de deixalles plàstiques a les platges</h4><p>Entre el 80% i el 90% de les deixalles marines a la conca són plàstic, i s’estima que 230.000 tones de plàstic d’origen terrestre fan cap al mar cada any. El turisme és el principal sector que contribueix a les deixalles a les platges (fins a un 60%), seguit de la pesca i l’aqüicultura (5-10%). Només deu tipus d’articles suposen el 66,4% de les deixalles a les platges del mar Mediterrani, i d’aquests, nou estan fabricats totalment o parcialment amb plàstic, i set, amb plàstic d’un sol ús. Les burilles i els filtres de cigarrets són els més comuns (27,3%).</p><p>L’informe de l’ICTA-UAB, titulat ‘Actuacions de les ciutats i regions de l’àrea del mar Mediterrani per lluitar contra la contaminació del mar’, indica que la principal causa d’aquesta situació és la generació massiva de residus i la seva mala gestió. Altres causes són la descàrrega de rebutjos industrials i urbans, les aigües residuals, el vessament agrícola, el transport marítim, la pesca i el trànsit marítim, i també el turisme.</p><p><em>«Per fer front a la contaminació, cal aplicar polítiques de gestió de reducció i tractament de residus, turisme, contaminació per plàstics i altres contaminants, aigües residuals i altres residus dels rius»</em>, explica Patrizia Ziveri, oceanògrafa de l’ICTA-UAB. Cal reorientar el model de producció, els patrons de consum i les pràctiques d’eliminació de residus.</p>",
        "en": "Content of the post in English"
     },
     "read_more": {
-      "ca": "<a class=\"d-block\" href=\"#\" >Llegir més</a>",
+      "ca": "<a class=\"d-block\" href=\"/pages/post.php?id=4\" >Llegir més</a>",
       "en": "Read more"
     },
-      "date": "1681412434",
-      "image": "./src/img/news_4.jpg"
+      "date": "1641563434",
+      "image": "/src/img/news_4.jpg"
 }

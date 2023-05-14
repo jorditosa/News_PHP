@@ -1,16 +1,16 @@
 {
     "title": {
-       "ca": "Títol del post en català",
+       "ca": "<h3>Les plantes s’hauran de moure menys del que es creia per viure en un clima favorable</h3>",
        "en": "Title of the post in English"
     },
     "description": {
-       "ca": "Contingut del post en català",
+       "ca": "<p>Les espècies de plantes hauran de desplaçar-se menys del que es pensava per trobar hàbitats favorables a mesura que canvia el clima, indica un estudi publicat aquest dilluns a ‘Nature’ que examina els microclimes.</p><p>Ilya Maclean i Regan Early, de la universitat anglesa d’Exeter, assenyalen en la seva investigació que les anàlisis fetes fins ara partint de dades macroclimàtiques han «sobreestimat» els paràmetres de moviment de les plantes en resposta al canvi del clima.</p><p>Els autors recorden que l’assumpció que moltes espècies hauran d’adaptar-se o ressituar-se per sobreviure determina les polítiques oficials de conservació, per la qual cosa és important que les previsions sobre aquests moviments siguin com més precises millor.</p><h4>La investigació</h4><p>En el seu estudi, Maclean i Early van utilitzar dades de 1977 a 1995 per modelar la distribució de 244 taxons de plantes de bruguerars i pastius europeus, que després van utilitzar per projectar la seva repartició entre el 2003 i el 2021 a fi d’avaluar l’impacte de les variables climàtiques.</p><p>Utilitzant dades macro i microclimàtiques, van comparar quadrícules amb tres resolucions diferents, d’uns 50 quilòmetres, 5 quilòmetres i 100 metres de longitud.</p><p>En les escales més grans, les espècies s’haurien hagut de desplaçar entre 3,7 i 62,4 km (14 km de mitjana) en 26 anys per seguir el ritme dels canvis del clima.</p><p>No obstant, quan es van utilitzar dades de microclimes amb una resolució de quadrícula de 100 metres, la mateixa espècie s’hauria de moure només una mitjana de 114 metres durant 26 anys, o d’uns 4,4 metres per any, per canviar a un microclima favorable.</p>",
        "en": "Content of the post in English"
     },
     "read_more": {
-      "ca": "<a class=\"d-block\" href=\"#\" >Llegir més</a>",
+      "ca": "<a class=\"d-block\" href=\"/pages/post.php?id=2\" >Llegir més</a>",
       "en": "Read more"
    },
       "date": "1681412434",
-      "image": "./src/img/news_2.jpg"
+      "image": "/src/img/news_2.jpg"
 }

@@ -1,16 +1,16 @@
 {
     "title": {
-       "ca": "Títol del post en català",
+       "ca": "<h3>La NASA alerta de la situació crítica als pantans de Catalunya</h3>",
        "en": "Title of the post in English"
     },
     "description": {
-       "ca": "Contingut del post en català",
+       "ca": "<p>El satèl·lit Landsat 8 evidencia l’episodi de sequera de la regió al comparar el nivell de l’aigua dels embassaments de Sau i Susqueda entre el 2021 i el 2023</p><p>Catalunya continua immersa en un episodi de sequera prolongada i un altre de calor extrema per a l’època, amb una primavera a 40 graus. Més enllà de temperatures típicament estiuenques molt abans de temps, els pantans voregen nivells crítics, ja hi ha restriccions d’aigua i la campanya d’incendis forestals es preveu com una de les més difícils dels últims anys. Amb tot, la Generalitat ha avançat el pla contra les onades de calor un mes i mig abans del que és habitual. Si algú encara pensa que tot això no és un efecte directe de la crisi climàtica a escala global, potser toca fer vàlida la dita que una imatge val més que mil paraules. La NASA ha mostrat l’evidència de la sequera comparant el nivell de l’aigua d’embassaments el 2021 i aquest any. En concret, ha posat l’ull sobre dues infraestructures hidràuliques catalanes com la de Sau i Susqueda, i la diferència és notòria.</p><p>Amb la Península convertida en un «forn ibèric», les captures fetes per la càmera Operational Land Imager (OLI) a bord del satèl·lit d’observació terrestre Landsat 8 mostren la situació dels dos grans pantans de Catalunya. D’una banda, l’embassament de Susqueda, situat a la comarca de la Selva (Girona). Amb una capacitat de 233 hectòmetres cúbics o, el que és el mateix, 233 de m3, la reserva actual és del 38,08%, 22 punts menys que l’any passat.</p><p>D’una altra, i aquí és on la sequera queda més patent, l’Observatori de la Terra de la NASA mostra la dràstica reducció del nivell d’aigua de Sau. La infraestructura hidràulica d’Osona (Barcelona) té un volum màxim de 165,26 hm3, però actualment només en té 11,57, el 7% de la seva capacitat, gairebé nou menys que el 2022, quan era al 61,35%.</p><h4>La primavera més seca des de 1990</h4><p><em>«Les sequeres estacionals són típiques del clima mediterrani de Catalunya, fins i tot a la conca del Ter, que s’estén des del Pirineu català fins al mar Mediterrani»</em>, explica Albert Ruhi, ecologista de la Universitat de Califòrnia, Berkeley, a la web de l’observatori de la NASA. «Però en els últims mesos, la falta de precipitacions i de neu ha provocat la primavera més seca des de 1990 per al Ter», assegura l’expert, que estudia l’ecologia de l’aigua dolça i com aquest riu està canviant amb el temps.</p><p><em>«La falta de pluja primaveral i de desglaç significa que l’estació seca d’aquest any serà el doble o fins i tot el triple de llarga»</em>, estima Ruhi. «Això podria conduir a impactes ecològics com la mortalitat de peixos i la proliferació d’algues», afegeix l’ecologista/p>.",
        "en": "Content of the post in English"
     },
     "read_more": {
-      "ca": "<a class=\"d-block\" href=\"#\" >Llegir més</a>",
+      "ca": "<a class=\"d-block\" href=\"/pages/post.php?id=5\" >Llegir més</a>",
       "en": "Read more"
     },
       "date": "1681412434",
-      "image": "./src/img/news_5.jpg"
+      "image": "/src/img/news_5.jpg"
 }
