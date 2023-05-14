@@ -14,51 +14,79 @@ includeTemplate('header');
 <main class="container">
     <h1 class="py-4">Noticies d'actualitat mediambiental</h1>
 
-    <div class="filter mb-4 p-4 border rounded bg-dark text-light">
-      <div class="row">
-        <div class="filter-date col">
-          <h5>Ordenar per data:</h5>
-          <div class="input">
-            <label for="dateNew">Més noves</label>
-            <input type="radio" name="filter-date" id="dateNew" value="" checked>
-          </div>
-          <div class="input">
-            <label for="dateOld">Més antigues</label>
-            <input type="radio" name="filter-date" id="dateOld" value="">
-          </div>
+    <form action="bloc.php" method="post" class="bg-dark text-light rounded-top p-4 d-flex align-items-center">
+      <div class="filter-date col d-flex gap-4">
+        <div class="input">
+          <label for="dateNew">Més recents</label>
+          <input type="radio" name="order-by" id="dateNew" value="dateNew">
         </div>
-  
-        <div class="filter-title col">
-          <h5>Ordenar per títol:</h5>
-          <div class="input">
-            <label for="dateNew">A - Z</label>
-            <input type="radio" name="filter-title" id="dateNew" value="" checked>
-          </div>
-          <div class="input">
-            <label for="dateOld">Z - A</label>
-            <input type="radio" name="filter-title" id="dateOld" value="">
-          </div>
+        <div class="input">
+          <label for="dateOld">Més antigues</label>
+          <input type="radio" name="order-by" id="dateOld" value="dateOld">
         </div>
       </div>
-    </div>
+
+      <div class="filter-title col d-flex gap-4">
+        <div class="input">
+          <label for="titleAZ">A - Z</label>
+          <input type="radio" name="order-by" id="titleAZ" value="titleAZ">
+        </div>
+        <div class="input">
+          <label for="titleZA">Z - A</label>
+          <input type="radio" name="order-by" id="titleZA" value="titleZA">
+        </div>
+      </div>
+
+      <hr>
+
+      <button type="submit" class="btn btn-light">Ordenar</button>
+    </form>
 
     <div class="row mb-2">
-
     <?php
+      // Obtener el valor seleccionado del formulario
+      $orderBy = $_POST['order-by'];
+
       // Importar datos Json
       $news=[];
-      for($i = 1; $i <= 5; $i++) {
+      for($i = 0; $i < 6; $i++) {
         $jsonData = file_get_contents('./api/noticies/post_'.$i.'.json');
         $data = json_decode($jsonData);
         $news[$i] = $data;
       }
-  
-    ?>
+
     
-    <?php for ($i = 1; $i <= 5; $i++) : ?>
+
+      // Ordenar según la opción seleccionada
+      if ($orderBy === 'dateNew') {
+        usort($news, function($a, $b) {
+          return $b->date - $a->date; // Orden descendente, de más nuevas a más antiguas
+        });
+      } elseif ($orderBy === 'dateOld') {
+        usort($news, function($a, $b) {
+          return $a->date - $b->date; // Orden ascendente, de más antiguas a más nuevas
+        });
+      } elseif ($orderBy === 'titleAZ') {
+          usort($news, function($a, $b) {
+              return strcmp($a->title->ca, $b->title->ca); // Orden ascendente, de A a Z
+          });
+      } elseif ($orderBy === 'titleZA') {
+          usort($news, function($a, $b) {
+              return strcmp($b->title->ca, $a->title->ca); // Orden descendente, de Z a A
+          });
+      }
+
+      // Bucle para mostrar las noticias
+      for ($i = 0; $i <= 5; $i++) {
+        // Resto del código para mostrar las noticias
+      }
+ 
+      ?>
+
+    <?php for ($i = 1; $i < 6; $i++) : ?>
       <?php $data = $news[$i]; ?>
       <div class="col-12">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="row g-0 border rounded-bottom overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <?php echo $data->title->ca; ?>
             <div class="mb-1 text-body-secondary">
@@ -93,8 +121,6 @@ includeTemplate('header');
 
   </div>
 </main>
-
-
 
 <?php
 includeTemplate('footer');

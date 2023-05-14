@@ -21,9 +21,6 @@
           <a class="nav-link" href="#">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Perfil</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">Logout</a>
         </li>
         <div class="dropdown">

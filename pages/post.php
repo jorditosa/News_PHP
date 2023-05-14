@@ -17,11 +17,9 @@ includeTemplate('head');
 
 <?php
 includeTemplate('header');
-
 ?>
 
-
-<div class="container mt-5">
+<div class="container my-5">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <i class="bi bi-caret-left"></i>
@@ -41,6 +39,10 @@ includeTemplate('header');
     </div>
 </div>
 
+<?php
+includeTemplate('footer');
+includeTemplate('scripts');
+?>
 
 </body>
 </html>
