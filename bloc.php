@@ -8,13 +8,11 @@ includeTemplate('head');
 <body>
 
 <?php
-includeTemplate('header');
-
+// Idioma por defecto
 session_start();
+$idioma = isset( $_SESSION['language']) ? $_SESSION['language'] : 'Cat';
 
-// Obtener el valor de la variable de sesión
-$idioma = $_SESSION['idioma'];
-
+require './includes/templates/header.php';
 ?>
 
 <main class="container">

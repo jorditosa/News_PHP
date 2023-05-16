@@ -23,18 +23,20 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Logout</a>
         </li>
-        <form method="POST">
-            <select name="idioma" id="idioma" class="form-select" onchange="this.form.submit()">
-                <option value="ca" <?php if ($idioma === 'ca') echo 'selected'; ?>>Cat</option>
-                <option value="en" <?php if ($idioma === 'en') echo 'selected'; ?>>Eng</option>
-            </select>
-        </form>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-translate"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="includes/lang.php?l=ca" rel="noopener noreferrer">Cat</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="includes/lang.php?l=en" rel="noopener noreferrer">Eng</a>
+            </li>
+          </ul>
+        </div>
       </ul>
     </div>
   </div>
 </nav>
-
-<?php
-
-
-?>
