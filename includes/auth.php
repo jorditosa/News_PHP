@@ -45,7 +45,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])) {
         $_SESSION['password'] = $password;
 
         // Redirigir a la página de inicio
-        header('Location: ../bloc.php?user='.$username.'');
+        header('Location: ../pages/perfil.php?user='.$username.'');
     } else {
         $error = "invalid";
         header('Location: login.php?error='.$error.'');
