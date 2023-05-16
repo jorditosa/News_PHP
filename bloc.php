@@ -3,6 +3,7 @@
 require './includes/functions.php';
 
 includeTemplate('head');
+
 ?>
 
 <body>
@@ -11,6 +12,12 @@ includeTemplate('head');
 // Idioma por defecto
 session_start();
 $idioma = isset( $_SESSION['language']) ? $_SESSION['language'] : 'ca';
+
+// Revisión de usuario conectado
+if(isset($_GET['user'])) {
+  $user = $_GET['user'];
+} 
+$_SESSION['user'] = $user;
 
 require './includes/templates/header.php';
 ?>

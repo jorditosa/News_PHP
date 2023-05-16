@@ -1,6 +1,10 @@
 <?php
 session_start();
-$login = isset($_SESSION['login']) ? $_SESSION['login'] : false;
+
+// Nombre del usuario, si está conectado
+if(isset($_SESSION['user'])) {
+  $user = $_SESSION['user'];
+}
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -22,12 +26,15 @@ $login = isset($_SESSION['login']) ? $_SESSION['login'] : false;
         </li>
       </ul>
       <ul class="navbar-nav align-items-center">
-        <?php if (!$login) : ?>
+        <?php if (!$user) : ?>
         <li class="nav-item pe-3">
           <a class="nav-link" href="/includes/login.php">Login</a>
         </li>
         <?php else : ?>
-        <li class="nav-item pe-3">
+        <li class="nav-item pe-3 d-flex align-items-center">
+          <span class="text-light">
+            <?php echo "Hola " . $user; ?>
+          </span>
           <a class="nav-link" href="/includes/logout.php">Logout</a>
         </li>
         <?php endif; ?>
