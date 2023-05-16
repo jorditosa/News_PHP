@@ -10,7 +10,7 @@ includeTemplate('head');
 <?php
 // Idioma por defecto
 session_start();
-$idioma = isset( $_SESSION['language']) ? $_SESSION['language'] : 'Cat';
+$idioma = isset( $_SESSION['language']) ? $_SESSION['language'] : 'ca';
 
 require './includes/templates/header.php';
 ?>

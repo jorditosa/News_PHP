@@ -1,3 +1,8 @@
+<?php
+session_start();
+$login = isset($_SESSION['login']) ? $_SESSION['login'] : false;
+?>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <h1 class="navbar-brand m-0 p-2 border-end">NEWS APP</h1>
@@ -17,12 +22,15 @@
         </li>
       </ul>
       <ul class="navbar-nav align-items-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+        <?php if (!$login) : ?>
+        <li class="nav-item pe-3">
+          <a class="nav-link" href="/includes/login.php">Login</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Logout</a>
+        <?php else : ?>
+        <li class="nav-item pe-3">
+          <a class="nav-link" href="/includes/logout.php">Logout</a>
         </li>
+        <?php endif; ?>
         <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-translate"></i>
