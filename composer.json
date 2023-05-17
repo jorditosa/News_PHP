@@ -1,0 +1,11 @@
+{
+    "name": "jordi/pec_3",
+    "description": "PEC3 Backend PHP",
+    "authors": [
+        {
+            "name": "jorditosa",
+            "email": "jordisato88@gmail.com"
+        }
+    ],
+    "require": {}
+}

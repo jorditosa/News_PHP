@@ -60,10 +60,10 @@ require './includes/templates/header.php';
       
       // Importar datos Json
       $news=[];
-      for($i = 0; $i < 6; $i++) {
+      for($i = 1, $j = 0; $j < 5; $i++, $j++) {
         $jsonData = file_get_contents('./api/noticies/post_'.$i.'.json');
         $data = json_decode($jsonData);
-        $news[$i] = $data;
+        $news[$j] = $data;
       }    
 
       // Ordenar según la opción seleccionada
@@ -86,7 +86,7 @@ require './includes/templates/header.php';
       }
     ?>
 
-    <?php for ($i = 1; $i < 6; $i++) : ?>
+    <?php for ($i = 0; $i < 5; $i++) : ?>
       <?php $data = $news[$i]; ?>
       <div class="col-12">
         <div class="row g-0 border rounded-bottom overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
