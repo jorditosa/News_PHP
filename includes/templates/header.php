@@ -1,6 +1,9 @@
 <?php
 
-
+// Recuperar Cookies de idioma e usuario
+session_start();
+$idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
+$user = $_COOKIE['username'] ?? false;
 
 ?>
 
@@ -29,6 +32,9 @@
         </li>
         <?php else : ?>
         <li class="nav-item pe-3 d-flex align-items-center">
+          <a class="text-light fs-3" href="/pages/perfil.php">
+            <i class="bi bi-person"></i>
+          </a>
           <span class="text-light">
             <?php echo "Hola " . $user; ?>
           </span>
