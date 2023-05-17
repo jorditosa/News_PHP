@@ -5,9 +5,10 @@ $id = $_GET['id'];
 // Importar funcionalidades
 require '../includes/functions.php';
 
-// Idioma por defecto
+// Recuperar Cookies de idioma e usuario
 session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
+$user = $_COOKIE['username'] ?? false;
 
 // Importar datos Json con la Id especificada en la URL
 $jsonData = file_get_contents("../api/noticies/post_$id.json");

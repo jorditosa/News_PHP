@@ -1,10 +1,7 @@
 <?php
-session_start();
 
-// Nombre del usuario, si está conectado
-if(isset($_SESSION['user'])) {
-  $user = $_SESSION['user'];
-}
+
+
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

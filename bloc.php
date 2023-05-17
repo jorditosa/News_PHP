@@ -2,11 +2,6 @@
 // Importar funcionalidades
 require './includes/functions.php';
 
-// Recuperar Cookies de idioma e usuario
-session_start();
-$idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
-$user = $_COOKIE['username'] ?? false;
-
 includeTemplate('head');
 
 ?>
@@ -14,6 +9,12 @@ includeTemplate('head');
 <body>
 
 <?php
+
+// Recuperar Cookies de idioma e usuario
+session_start();
+$idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
+$user = $_COOKIE['username'] ?? false;
+
 require './includes/templates/header.php';
 ?>
 
