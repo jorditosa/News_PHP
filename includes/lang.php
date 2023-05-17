@@ -1,5 +1,12 @@
 <?php
 session_start();
 $_SESSION['language'] = $_GET['l'] ?? 'ca';
-header( "Location: /bloc.php")
+
+$idioma = $_SESSION['language'];
+
+// Establecer la cookie
+setcookie('idioma_cookie', $idioma, time() + 3600, '/');
+
+header("Location: /bloc.php");
+exit;
 ?>

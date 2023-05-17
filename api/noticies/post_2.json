@@ -8,8 +8,8 @@
        "en": "<p>Plant species will have to move less than previously thought to find favorable habitats as the climate changes, according to a study published on Monday in 'Nature' that examines microclimates.</p><p>Ilya Maclean and Regan Early from the University of Exeter highlight in their research that previous analyses based on macroclimatic data have \"overestimated\" the plant movement parameters in response to climate change.</p><p>The authors emphasize that the assumption that many species will need to adapt or relocate to survive shapes official conservation policies, making it important for predictions about these movements to be as accurate as possible.</p><h4>The research</h4><p>In their study, Maclean and Early used data from 1977 to 1995 to model the distribution of 244 taxa of plants from European heaths and grasslands. They then projected their distribution between 2003 and 2021 to assess the impact of climatic variables.</p><p>By using both macroclimatic and microclimatic data, they compared grids at three different resolutions: approximately 50 kilometers, 5 kilometers, and 100 meters in length.</p><p>At larger scales, species would have had to move between 3.7 and 62.4 kilometers (with an average of 14 kilometers) in 26 years to keep up with climate changes.</p><p>However, when microclimate data with a grid resolution of 100 meters was used, the same species would only need to move an average of 114 meters over 26 years, or about 4.4 meters per year, to shift to a favorable microclimate.</p>"
     },
     "read_more": {
-      "ca": "<a class=\"d-block\" href=\"/pages/post.php?id=2\" >Llegir més</a>",
-      "en": "<a class=\"d-block\" href=\"/pages/post.php?id=2\" >Read more</a>"
+      "ca": "<a class=\"d-block py-2\" href=\"/pages/post.php?id=1\" >Llegir més</a>",
+      "en": "<a class=\"d-block py-2\" href=\"/pages/post.php?id=1\" >Read more</a>"
    },
       "date": "1661412434",
       "image": "/src/img/news_2.jpg"

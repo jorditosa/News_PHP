@@ -44,6 +44,9 @@ if(!empty($_POST['username']) && !empty($_POST['password'])) {
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $password;
 
+        // Crear cookie
+        setcookie('username', $username, time() + 60 * 60 * 24 * 30);
+
         // Redirigir a la página de inicio
         header('Location: ../pages/perfil.php?user='.$username.'');
     } else {

@@ -1,13 +1,12 @@
+/* Reset styles from Bootstrap */
 
-
-
-/*  News Section */
-
-.news-img {
-    width: 100%;
-    max-height: 200px;
+a {
+    color: #000;
 }
 
+.dropdown-menu {
+    --bs-dropdown-min-width: 4rem;
+}
 
 /* Language switcher */
 

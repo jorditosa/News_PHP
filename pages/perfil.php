@@ -1,16 +1,11 @@
 <?php
+// Recuperar Cookies de idioma e usuario
+session_start();
+$idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
+$user = $_COOKIE['username'] ?? false;
+
 require('../includes/templates/head.php');
 require('../includes/templates/header.php');
-
-
-// Revisión de usuario conectado
-if(isset($_GET['user'])) {
-    $user = $_GET['user'];
-  } 
-  $_SESSION['user'] = $user;
-  
-
-
 
 ?>
 

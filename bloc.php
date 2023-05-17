@@ -2,6 +2,11 @@
 // Importar funcionalidades
 require './includes/functions.php';
 
+// Recuperar Cookies de idioma e usuario
+session_start();
+$idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
+$user = $_COOKIE['username'] ?? false;
+
 includeTemplate('head');
 
 ?>
@@ -9,16 +14,6 @@ includeTemplate('head');
 <body>
 
 <?php
-// Idioma por defecto
-session_start();
-$idioma = isset( $_SESSION['language']) ? $_SESSION['language'] : 'ca';
-
-// Revisión de usuario conectado
-if(isset($_GET['user'])) {
-  $user = $_GET['user'];
-} 
-$_SESSION['user'] = $user;
-
 require './includes/templates/header.php';
 ?>
 
