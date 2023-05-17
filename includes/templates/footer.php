@@ -1,3 +1,8 @@
+<?php
+$jsondata = file_get_contents('./api/noticies/common.json');
+$data = json_decode($jsondata);
+?>
+
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
@@ -39,7 +44,9 @@
           <!--Grid column-->
           <div class="col-auto">
             <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
+              <strong>
+               <?php echo $data->footer->subscribe->ca; ?> 
+              </strong>
             </p>
           </div>
           <!--Grid column-->
@@ -57,7 +64,7 @@
           <div class="col-auto">
             <!-- Submit button -->
             <button type="submit" class="btn btn-outline-light mb-4">
-              Subscribe
+              <?php echo $data['footer']['button']; ?>
             </button>
           </div>
           <!--Grid column-->
@@ -70,9 +77,7 @@
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
+        <?php echo $data['footer']['text']; ?>
       </p>
     </section>
     <!-- Section: Text -->

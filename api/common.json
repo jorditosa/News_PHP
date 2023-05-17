@@ -1,0 +1,20 @@
+{
+    "footer": {
+        "subscribe": {
+          "ca": "Subscriu-te",
+          "en": "Subscribe"
+        },
+        "contact": {
+          "ca": "El teu email",
+          "en": "Your email"
+        },
+        "button": {
+          "ca": "Enviar",
+          "en": "Send"
+        },
+        "text": {
+          "ca": "Una web de notícies mediambientals que informa sobre l'estat del planeta i promou la sostenibilitat.",
+          "en": "A website of environmental news that informs about the state of the planet and promotes sustainability."
+        }
+      }
+}

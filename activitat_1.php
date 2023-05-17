@@ -33,4 +33,9 @@ $data = json_decode($jsonData);
         echo $data->description->en;
         ?>
     </div>
+    <?php
+    includeTemplate('footer');
+    includeTemplate('scripts');
+    ?>
 </body>
+</html>
