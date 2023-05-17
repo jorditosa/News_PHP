@@ -1,4 +1,14 @@
 {
+    "navbar": {
+      "home": {
+        "ca": "Inici",
+        "en": "Home"
+      },
+      "salutation": {
+        "ca": "Hola",
+        "en": "Hello"
+      }
+    },
     "footer": {
         "subscribe": {
           "ca": "Subscriu-te",

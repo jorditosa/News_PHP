@@ -1,6 +1,11 @@
 <?php
 $jsondata = file_get_contents('./api/noticies/common.json');
 $data = json_decode($jsondata);
+
+// Recuperar Cookies de idioma e usuario
+session_start();
+$idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
+$user = $_COOKIE['username'] ?? false;
 ?>
 
 <!-- Footer -->
@@ -45,7 +50,8 @@ $data = json_decode($jsondata);
           <div class="col-auto">
             <p class="pt-2">
               <strong>
-               <?php echo $data->footer->subscribe->ca; ?> 
+               <?php echo $data->footer->subscribe->$idioma;
+               ?> 
               </strong>
             </p>
           </div>
@@ -55,7 +61,7 @@ $data = json_decode($jsondata);
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" placeholder="El teu email" />
+              <input type="email" id="form5Example21" class="form-control" placeholder=" <?php echo $data->footer->contact->$idioma; ?>" />
             </div>
           </div>
           <!--Grid column-->
@@ -64,7 +70,7 @@ $data = json_decode($jsondata);
           <div class="col-auto">
             <!-- Submit button -->
             <button type="submit" class="btn btn-outline-light mb-4">
-              <?php echo $data['footer']['button']; ?>
+              <?php echo $data->footer->subscribe->$idioma; ?>
             </button>
           </div>
           <!--Grid column-->
@@ -77,7 +83,7 @@ $data = json_decode($jsondata);
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
-        <?php echo $data['footer']['text']; ?>
+        <?php echo $data->footer->text->$idioma; ?>
       </p>
     </section>
     <!-- Section: Text -->

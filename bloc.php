@@ -21,7 +21,7 @@ require './includes/templates/header.php';
 <main class="container">
   <h1 class="py-4">Noticies d'actualitat mediambiental</h1>
   
-  <form action="bloc.php" method="post" class="rpw bg-dark text-light rounded-top p-4 d-flex align-items-center">
+  <form action="bloc.php" method="post" class="bg-dark text-light rounded-top p-4 d-flex align-items-center">
     <div class="filter-date col d-flex gap-4">
       <div class="input">
         <label for="dateNew">Més recents</label>
@@ -49,7 +49,7 @@ require './includes/templates/header.php';
       <button type="submit" class="btn btn-light">Ordenar</button>
     </form>
     
-    <div class="row mb-2">
+    <div class="row my-2">
       <?php
       // Obtener el valor seleccionado del formulario
       $orderBy = $_POST['order-by'];

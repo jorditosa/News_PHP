@@ -1,4 +1,6 @@
 <?php
+$jsondata = file_get_contents('./api/noticies/common.json');
+$data = json_decode($jsondata);
 
 // Recuperar Cookies de idioma e usuario
 session_start();
@@ -16,13 +18,15 @@ $user = $_COOKIE['username'] ?? false;
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/bloc.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="/bloc.php">
+            <?php echo $data->navbar->home->$idioma; ?>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/activitat_1.php">Act 1</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">API</a>
+          <a class="nav-link" href="/api/noticies/ca/api.php">API</a>
         </li>
       </ul>
       <ul class="navbar-nav align-items-center">
@@ -33,10 +37,10 @@ $user = $_COOKIE['username'] ?? false;
         <?php else : ?>
         <li class="nav-item pe-3 d-flex align-items-center">
           <a class="text-light fs-3" href="/pages/perfil.php">
-            <i class="bi bi-person"></i>
+            <i class="bi bi-person px-1 fs-2"></i>
           </a>
-          <span class="text-light">
-            <?php echo "Hola " . $user; ?>
+          <span class="text-light px-2 border-end">
+            <?php echo $data->navbar->salutation->{$idioma} . ' ' . $user; ?>
           </span>
           <a class="nav-link" href="/includes/logout.php">Logout</a>
         </li>
