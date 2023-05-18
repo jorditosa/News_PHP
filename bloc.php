@@ -1,8 +1,8 @@
 <?php
 // Importar funcionalidades
-require './includes/functions.php';
+include './includes/app.php';
 
-includeTemplate('head');
+include TEMPLATE_URL . 'includes/templates/head.php';
 
 ?>
 
@@ -14,8 +14,7 @@ includeTemplate('head');
 session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'] ?? false;
-
-require './includes/templates/header.php';
+include TEMPLATE_URL . 'includes/templates/header.php';
 ?>
 
 <main class="container">
@@ -111,7 +110,7 @@ require './includes/templates/header.php';
                 echo $data->read_more->$idioma;
                 ?>
               </div>
-              <img class="news-img pt-2 col-3" src="<?php echo $data->image; ?>" alt="imatge noticia">
+              <img class="news-img pt-2 col-3" src="<?php echo BASE_URL . $data->image; ?>" alt="imatge noticia">
             </div>
           </div>
         </div>
@@ -122,8 +121,8 @@ require './includes/templates/header.php';
 </main>
 
 <?php
-includeTemplate('footer');
-includeTemplate('scripts');
+    include TEMPLATE_URL . 'includes/templates/footer.php';
+    include TEMPLATE_URL . 'includes/templates/scripts.php';
 ?>
 
 </body>

@@ -1,9 +1,17 @@
 <?php
-$jsondata = file_get_contents('./api/noticies/common.json');
+// Enrutamiento correcto según la página donde se llame al header
+$currentDirectory = dirname($_SERVER['PHP_SELF']);
+
+if ($currentDirectory === '/') {
+    $jsondata = file_get_contents('api/noticies/common.json');
+} elseif ($currentDirectory === '/includes') {
+    $jsondata = file_get_contents('../api/noticies/common.json');
+} elseif ($currentDirectory === '/includes/templates') {
+    $jsondata = file_get_contents('../../api/noticies/common.json');
+}
 $data = json_decode($jsondata);
 
 // Recuperar Cookies de idioma e usuario
-session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'] ?? false;
 ?>
@@ -98,4 +106,3 @@ $user = $_COOKIE['username'] ?? false;
   </div>
   <!-- Copyright -->
 </footer>
-<!-- Footer -->

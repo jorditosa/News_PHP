@@ -1,27 +1,26 @@
 <?php
 
-$id = $_GET['id'];
-
 // Importar funcionalidades
-require '../functions.php';
-
-// Importar datos Json con la Id especificada en la URL
-$jsonData = file_get_contents("../../api/noticies/post_$id.json");
-$data = json_decode($jsonData);
-
-includeTemplate('head');
+include '../app.php';
+include TEMPLATE_URL . 'head.php';
 
 ?>
 
 <body>
 
 <?php
+$id = $_GET['id'];
+
+// Importar datos Json con la Id especificada en la URL
+$jsonData = file_get_contents("../../api/noticies/post_".$id.".json");
+$data = json_decode($jsonData);
+
 // Recuperar Cookies de idioma e usuario
 session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'] ?? false;
 
-includeTemplate('header');
+include TEMPLATE_URL . 'header.php';
 ?>
 
 <div class="container my-5">
@@ -29,7 +28,7 @@ includeTemplate('header');
       <ol class="breadcrumb">
         <i class="bi bi-caret-left"></i>
         <li class="breadcrumb-item">
-            <a class="text-dark" href="../../bloc.php">Home</a>
+            <a class="text-dark" href="<?php echo BASE_URL ?>bloc.php">Home</a>
         </li>
       </ol>
     </nav>
@@ -40,13 +39,13 @@ includeTemplate('header');
                 <?php echo $data->description->$idioma; ?>
             </div>
         </div>
-        <img class="pt-2" src="<?php echo $data->image; ?>" alt="imatge noticia">
+        <img class="pt-2" src="<?php echo BASE_URL . $data->image; ?>" alt="imatge noticia">
     </div>
 </div>
 
 <?php
-includeTemplate('footer');
-includeTemplate('scripts');
+  include TEMPLATE_URL . 'footer.php';
+  include TEMPLATE_URL . 'scripts.php';
 ?>
 
 </body>

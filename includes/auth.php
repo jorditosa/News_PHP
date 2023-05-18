@@ -48,7 +48,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])) {
         setcookie('username', $username, time() + 3600, '/');
 
         // Redirigir a la página de inicio
-        header('Location: ../pages/perfil.php?user='.$username.'');
+        header('Location: ./templates/perfil.php?user='.$username.'');
     } else {
         $error = "invalid";
         header('Location: login.php?error='.$error.'');

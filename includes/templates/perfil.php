@@ -1,11 +1,14 @@
 <?php
+// Importar funcionalidades
+require '../app.php';
+include TEMPLATE_URL . 'head.php';
+
 // Recuperar Cookies de idioma e usuario
 session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'] ?? false;
 
-require('./includes/templates/head.php');
-require('./includes/templates/header.php');
+include TEMPLATE_URL . 'header.php';
 
 ?>
 
@@ -22,8 +25,8 @@ require('./includes/templates/header.php');
 
     <?php
     
-    require('./includes/templates/footer.php');
-    require('./includes/templates/scripts.php');
+    include TEMPLATE_URL . 'footer.php';
+    include TEMPLATE_URL . 'scripts.php';
 
     ?>
 

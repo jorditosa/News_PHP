@@ -1,18 +1,17 @@
 <?php
-require './includes/functions.php';
+require './includes/app.php';
 
-includeTemplate('head');
+include TEMPLATE_URL . 'includes/templates/head.php';
 
 ?>
 
 <?php
 
 // Recuperar Cookies de idioma e usuario
-session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'];
 
-includeTemplate('header');
+include TEMPLATE_URL . 'includes/templates/header.php';
 
 $jsonData = file_get_contents('./api/noticies/post_1.json');
 $data = json_decode($jsonData);
@@ -34,8 +33,8 @@ $data = json_decode($jsonData);
         ?>
     </div>
     <?php
-    includeTemplate('footer');
-    includeTemplate('scripts');
+    include TEMPLATE_URL . 'includes/templates/footer.php';
+    include TEMPLATE_URL . 'includes/templates/scripts.php';
     ?>
 </body>
 </html>

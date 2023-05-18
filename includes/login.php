@@ -1,8 +1,7 @@
 <?php
 // Importar funcionalidades
-require '../includes/functions.php';
-
-includeTemplate('head');
+require './app.php';
+include TEMPLATE_URL . 'templates/head.php';
 
 // Validaciones y errores
 if(isset($_GET['error'])) {
@@ -14,9 +13,9 @@ if(isset($_GET['error'])) {
 
 
 <body>
-
+  
 <?php
-includeTemplate('header');
+  include TEMPLATE_URL . 'templates/header.php';
 ?>
 
 <form action="auth.php" method="post" id="login-form" class="container py-5 col-3">
@@ -59,6 +58,6 @@ includeTemplate('header');
 </form>
 
 <?php
-includeTemplate('footer');
-includeTemplate('scripts');
+    include TEMPLATE_URL . 'templates/footer.php';
+    include TEMPLATE_URL . 'templates/scripts.php';
 ?>

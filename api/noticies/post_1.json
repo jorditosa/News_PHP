@@ -12,5 +12,5 @@
          "en": "<a class=\"d-block py-2\" href=\"./includes/templates/post.php?id=1\" >Read more</a>"
     },
     "date": "1681412434",
-    "image": "./src/img/news_1.jpg"
+    "image": "src/img/news_1.jpg"
  }
