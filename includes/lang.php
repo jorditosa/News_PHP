@@ -7,6 +7,6 @@ $idioma = $_SESSION['language'];
 // Establecer la cookie
 setcookie('idioma_cookie', $idioma, time() + 3600, '/');
 
-header("Location: /bloc.php");
+header("Location: ../bloc.php");
 exit;
 ?>

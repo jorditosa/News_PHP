@@ -3,10 +3,10 @@
 $id = $_GET['id'];
 
 // Importar funcionalidades
-require '../includes/functions.php';
+require '../functions.php';
 
 // Importar datos Json con la Id especificada en la URL
-$jsonData = file_get_contents("../api/noticies/post_$id.json");
+$jsonData = file_get_contents("../../api/noticies/post_$id.json");
 $data = json_decode($jsonData);
 
 includeTemplate('head');
@@ -29,7 +29,7 @@ includeTemplate('header');
       <ol class="breadcrumb">
         <i class="bi bi-caret-left"></i>
         <li class="breadcrumb-item">
-            <a class="text-dark" href="/bloc.php">Home</a>
+            <a class="text-dark" href="../../bloc.php">Home</a>
         </li>
       </ol>
     </nav>

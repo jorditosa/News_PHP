@@ -8,9 +8,9 @@
        "en": "<p>The ecologist Richard T. Corlett believes that there is a way to save all the plants in the world from extinction and has outlined a plan to protect them. In an article published in 'Trends in Plant Science,' he explains his idea, which he believes can work to prevent even a single species from going extinct, and if that is possible, \"there is no excuse\" not to do it.</p><strong>An often overlooked threat.</strong><br/><p>Just like animals, many plant species are suffering to adapt to a world dominated and modified by humans. However, conservation efforts often ignore them, even though they are cheaper and easier to protect than animals and play a crucial role both in ecosystems and for us, providing us with food and medicines, to name a few.</p><p>Currently, it is believed that between 21% and 48% of all vascular plant species, including flowering plants and trees, could go extinct due to changes in land use and other unsustainable practices. Corlett believes that the extinction of all 382,000 known plant species could be avoided, but it is important to note that there is no one-size-fits-all solution.</p><strong>Very different plans</strong><br/><p>Therefore, conservation plans can vary greatly, both in their natural habitats and in controlled environments such as botanical gardens or even a combination of both. This is where 'microreserves' would come into play, small protected areas, as well as seed conservation for replanting in case the worst happens. However, the scientist acknowledges that it is best to conserve wild, self-sustaining populations in protected areas, allowing them to evolve in response to environmental changes with the help of the other components of the ecosystems they are part of, which could also go extinct without them.</p>"
     },
     "read_more": {
-         "ca": "<a class=\"d-block py-2\" href=\"/pages/post.php?id=1\" >Llegir més</a>",
-         "en": "<a class=\"d-block py-2\" href=\"/pages/post.php?id=1\" >Read more</a>"
+         "ca": "<a class=\"d-block py-2\" href=\"./includes/templates/post.php?id=1\" >Llegir més</a>",
+         "en": "<a class=\"d-block py-2\" href=\"./includes/templates/post.php?id=1\" >Read more</a>"
     },
     "date": "1681412434",
-    "image": "/src/img/news_1.jpg"
+    "image": "./src/img/news_1.jpg"
  }

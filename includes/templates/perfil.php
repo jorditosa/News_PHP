@@ -4,8 +4,8 @@ session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'] ?? false;
 
-require('../includes/templates/head.php');
-require('../includes/templates/header.php');
+require('./includes/templates/head.php');
+require('./includes/templates/header.php');
 
 ?>
 
@@ -22,8 +22,8 @@ require('../includes/templates/header.php');
 
     <?php
     
-    require('../includes/templates/footer.php');
-    require('../includes/templates/scripts.php');
+    require('./includes/templates/footer.php');
+    require('./includes/templates/scripts.php');
 
     ?>
 
