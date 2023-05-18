@@ -6,5 +6,4 @@ define('BASE_URL', $PROD);
 
 define('TEMPLATE_URL', './');
 
-define('FUNCTIONS_URL', 'functions.php');
 ?>

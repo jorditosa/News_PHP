@@ -4,6 +4,22 @@
 $user = "jordisan";
 $passwd = "Pec3";
 $passwdHash = password_hash($passwd, PASSWORD_BCRYPT);
+
+$data = array(
+   "Username" => $user,
+   "Password" => $passwdHash
+);
+
+$jsonData = json_encode($data, JSON_PRETTY_PRINT);
+
+// Recoger el input del usuario
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Obtener los valores del formulario
+    $password = $_POST['password'];
+
+    echo "La contraseña ingresada es: " . $password;
+}
+
 // Verificacion contraseñas
 $passwdValidations;
 if (password_verify($passwd, $passwdHash)) {
@@ -12,12 +28,6 @@ if (password_verify($passwd, $passwdHash)) {
     $passwdValidations = false;
 }
 
-$data = array(
-   "Username" => $user,
-   "Password" => $passwdHash
-);
-
-$jsonData = json_encode($data, JSON_PRETTY_PRINT);
 
 file_put_contents("../users.json", $jsonData);
 
@@ -34,11 +44,9 @@ $passwd = $data->Password;
 
 
 if(!empty($_POST['username']) && !empty($_POST['password'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
 
     // Comprobación datos correctos
-    if($username == $user && $passwdValidations) {
+    if($username == $user && $password == $passwd && $passwdValidations) {
         // Iniciar sesión para nuevos datos
         session_start();
         $_SESSION['username'] = $username;

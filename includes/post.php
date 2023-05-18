@@ -1,8 +1,8 @@
 <?php
 
 // Importar funcionalidades
-include '../app.php';
-include TEMPLATE_URL . 'head.php';
+include './app.php';
+include TEMPLATE_URL . 'templates/head.php';
 
 ?>
 
@@ -12,15 +12,14 @@ include TEMPLATE_URL . 'head.php';
 $id = $_GET['id'];
 
 // Importar datos Json con la Id especificada en la URL
-$jsonData = file_get_contents("../../api/noticies/post_".$id.".json");
+$jsonData = file_get_contents("../api/noticies/post_" . $id . ".json");
 $data = json_decode($jsonData);
 
 // Recuperar Cookies de idioma e usuario
-session_start();
 $idioma = $_COOKIE['idioma_cookie'] ?? 'ca';
 $user = $_COOKIE['username'] ?? false;
 
-include TEMPLATE_URL . 'header.php';
+
 ?>
 
 <div class="container my-5">
@@ -44,8 +43,8 @@ include TEMPLATE_URL . 'header.php';
 </div>
 
 <?php
-  include TEMPLATE_URL . 'footer.php';
-  include TEMPLATE_URL . 'scripts.php';
+  include TEMPLATE_URL . 'templates/footer.php';
+  include TEMPLATE_URL . 'templates/scripts.php';
 ?>
 
 </body>

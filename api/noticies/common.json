@@ -9,6 +9,10 @@
         "en": "Hello"
       }
     },
+    "homeTitle": {
+      "ca": "Noticies d'actualitat mediambiental",
+      "en": "Environmental news"
+    },
     "footer": {
         "subscribe": {
           "ca": "Subscriu-te",

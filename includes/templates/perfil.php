@@ -14,12 +14,12 @@ include TEMPLATE_URL . 'header.php';
 
 <body>
     <div class="container py-5">
-        <div class="float-end border rounded">
+        <div class="float-end">
             <i class="bi bi-file-earmark-person fs-1 px-3"></i>
             <i class="bi bi-credit-card fs-1 px-3"></i>
             <i class="bi bi-trash fs-1 px-3 text-danger"></i>
         </div>
-        <h1>Benvingut/da <?php echo $user ?></h1>
+        <h1 class="py-3">Benvingut/da <?php echo $user ?></h1>
         <hr>
     </div>
 

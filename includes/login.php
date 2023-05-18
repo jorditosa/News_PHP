@@ -1,6 +1,6 @@
 <?php
 // Importar funcionalidades
-require './app.php';
+include './app.php';
 include TEMPLATE_URL . 'templates/head.php';
 
 // Validaciones y errores
@@ -9,8 +9,6 @@ if(isset($_GET['error'])) {
 }
 
 ?>
-
-
 
 <body>
   

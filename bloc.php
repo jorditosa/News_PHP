@@ -18,7 +18,9 @@ include TEMPLATE_URL . 'includes/templates/header.php';
 ?>
 
 <main class="container">
-  <h1 class="py-4">Noticies d'actualitat mediambiental</h1>
+  <h1 class="py-4">
+    <?php echo $data->homeTitle->$idioma; ?>
+  </h1>
   
   <form action="bloc.php" method="post" class="bg-dark text-light rounded-top p-4 d-flex align-items-center">
     <div class="filter-date col d-flex gap-4">

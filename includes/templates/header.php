@@ -2,14 +2,14 @@
 include './includes/app.php';
 
 // Enrutamiento correcto según la página donde se llame al header
-$currentDirectory = dirname($_SERVER['PHP_SELF']);
+$currentURL = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https://" : "http://") . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-if ($currentDirectory === '/') {
-    $jsondata = file_get_contents('api/noticies/common.json');
-} elseif ($currentDirectory === '/includes') {
+if ($currentURL ===  BASE_URL . 'bloc.php' || $currentURL ===  BASE_URL . 'activitat_1.php' ) {
+    $jsondata = file_get_contents('./api/noticies/common.json');
+} elseif ($currentURL ===  BASE_URL . 'includes/login.php') {
     $jsondata = file_get_contents('../api/noticies/common.json');
-} elseif ($currentDirectory === '/includes/templates') {
-    $jsondata = file_get_contents('../../api/noticies/common.json');
+} else {
+  $jsondata = file_get_contents('../../api/noticies/common.json');
 }
 $data = json_decode($jsondata);
 
